@@ -1,11 +1,11 @@
 package script;
 
-import org.testng.Reporter;
+//import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import generic.Basetest;
 import generic.Excel;
-import page.GooglePage;
+import page.Loginpage;
 
 public class DemoTest extends Basetest
 {
@@ -13,10 +13,9 @@ public class DemoTest extends Basetest
 	public void demoTest1() throws InterruptedException {
 			String data = Excel.getData(XL_PATH,"sheet1",1,0);
 			Reporter.log("test data:"+data,true);
-			Reporter.log(driver.getTitle(),true);	
 			
-			GooglePage g=new GooglePage(driver);
-			g.setSearch(data);
+			Loginpage g=new Loginpage(driver);
+		g.setSearch(data);
 			Thread.sleep(3000);
 
 	}
