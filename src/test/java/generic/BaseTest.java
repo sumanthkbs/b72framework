@@ -2,14 +2,12 @@ package generic;
 
 import java.net.URL;
 import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -17,11 +15,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-public class Basetest {
-	public static final String DEFAULT_URL="http://www.google.com";
+public class BaseTest {
+	public static final String DEFAULT_URL="https://demo.actitime.com";
 	public static final String DEFAULT_GRID="no";
 	public static final String DEFAULT_BROWSER="chrome";
-	public static final String XL_PATH="./data/input.xlsx";
+	public static final String XL_PATH="./data/input.xlsx.21.xlsx";
 	
 	public WebDriver driver;
 	public WebDriverWait wait;

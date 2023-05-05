@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Loginpage {
+public class LoginPage {
 	
 	@FindBy(id="username")
 	private WebElement unTB;
@@ -16,7 +16,7 @@ public class Loginpage {
 	@FindBy(xpath = "//div[text()='Login ']")
 	private WebElement loginBTN;
 	
-	public Loginpage(WebDriver driver)
+	public LoginPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver,this);
 	}
