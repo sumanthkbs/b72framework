@@ -19,7 +19,7 @@ public class BaseTest {
 	public static final String DEFAULT_URL="https://demo.actitime.com";
 	public static final String DEFAULT_GRID="no";
 	public static final String DEFAULT_BROWSER="chrome";
-	public static final String XL_PATH="./data/input.xlsx.21.xlsx";
+	public static final String XL_PATH="./data/input.xlsx";
 	
 	public WebDriver driver;
 	public WebDriverWait wait;
